@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.linhtetko.thelibraryapp.views.viewpods.SearchbarViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llSearchbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/general_margin"
+    android:layout_marginVertical="@dimen/margin_2x"
+    android:background="@drawable/background_search_bar"
+    android:elevation="@dimen/elevation_search_bar"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/general_margin">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:layout_weight="1"
+        android:text="@string/lbl_search_play_books" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivVpProfile"
+        android:layout_width="@dimen/size_main_profile_toolbar"
+        android:layout_height="@dimen/size_main_profile_toolbar"
+        android:layout_margin="@dimen/general_margin"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/img_circle"
+        app:srcCompat="@drawable/placeholder_profile" />
+</com.linhtetko.thelibraryapp.views.viewpods.SearchbarViewPod>

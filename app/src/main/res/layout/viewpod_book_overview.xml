@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linhtetko.thelibraryapp.views.viewpods.BookOverviewViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBookOverview"
+        android:layout_width="@dimen/width_book_overview"
+        android:layout_height="@dimen/height_book_overview"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder_android_book" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookOverviewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2x"
+        android:text="@string/app_name"
+        android:textColor="?attr/colorOnSurface"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivBookOverview"
+        app:layout_constraintTop_toTopOf="@id/ivBookOverview" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookOverviewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_margin"
+        app:layout_constraintStart_toStartOf="@id/tvBookOverviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvBookOverviewTitle"
+        tools:text="Lin Htet Ko" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookOverviewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_margin"
+        app:layout_constraintStart_toEndOf="@id/tvBookOverviewAuthor"
+        app:layout_constraintTop_toTopOf="@id/tvBookOverviewAuthor"
+        app:layout_constraintBottom_toBottomOf="@id/tvBookOverviewAuthor"
+        tools:text="Ebook" />
+
+
+</com.linhtetko.thelibraryapp.views.viewpods.BookOverviewViewPod>

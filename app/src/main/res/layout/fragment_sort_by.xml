@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".bottomsheets.SortByFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_sort_by"
+        android:textColor="?attr/colorOnSurface"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_2x"
+        android:layout_marginHorizontal="@dimen/margin_2x"
+        style="@style/TextAppearance.AppCompat.Headline"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_2x"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_2x">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdbSortByRecent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/general_margin"
+            android:text="@string/lbl_recently_opened"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdbSortByTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/general_margin"
+            android:text="@string/lbl_title"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdbSortByAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/general_margin"
+            android:text="@string/lbl_author"/>
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

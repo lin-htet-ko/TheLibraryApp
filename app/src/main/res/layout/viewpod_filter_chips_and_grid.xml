@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linhtetko.thelibraryapp.views.viewpods.YourBookViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_2x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBookCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/view_holder_library_filter_chip" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnYourBookSort"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_2x"
+            android:text="@string/lbl_sort_by_s"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorControlNormal"
+            app:icon="@drawable/ic_baseline_sort_24"
+            app:iconTint="?attr/colorControlNormal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvBookCategory" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivYourBookViewAs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_2x"
+            app:layout_constraintBottom_toBottomOf="@id/btnYourBookSort"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnYourBookSort"
+            app:srcCompat="@drawable/ic_baseline_list_alt_24"
+            app:tint="?attr/colorControlNormal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvYourBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_2x"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivYourBookViewAs"
+            tools:listitem="@layout/view_holder_book" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.linhtetko.thelibraryapp.views.viewpods.YourBookViewPod>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/general_margin"
+    android:layout_width="@dimen/size_recent_viewed_book"
+    android:layout_height="@dimen/size_recent_viewed_book">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivRecentViewed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/img_rounded"
+        app:srcCompat="@drawable/placeholder_profile" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMoreRecentViewed"
+        android:layout_width="@dimen/size_ic_recent_viewed_more_"
+        android:layout_height="@dimen/size_ic_recent_viewed_more_"
+        android:layout_margin="@dimen/margin_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivIsOfflineRecentViewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:background="@color/transparent_50_black"
+        app:layout_constraintBottom_toTopOf="@id/pbRecentViewed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/img_rounded"
+        app:srcCompat="@drawable/ic_outline_arrow_circle_down_24" />
+
+    <ProgressBar
+        android:id="@+id/pbRecentViewed"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:progress="10"
+        android:layout_marginHorizontal="@dimen/margin_2x"
+        android:progressTint="@color/white"
+        android:secondaryProgressTint="@color/transparent_50_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

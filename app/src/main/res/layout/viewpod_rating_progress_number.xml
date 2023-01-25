@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linhtetko.thelibraryapp.views.viewpods.RatingProgressNumberViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/margin_2x"
+    android:paddingTop="@dimen/margin_small">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRatingProgressNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="?attr/colorOnSurface"
+        tools:text="1" />
+
+    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+        android:id="@+id/pgRatingProgress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_progress"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        app:rpbBackgroundTextColor="@android:color/transparent"
+        app:rpbCornerRadius="@dimen/margin_2x"
+        app:rpbShowProgressText="false"
+        app:rpbProgressColor="?attr/colorPrimary"
+        app:rpbBackgroundColor="@color/transparent_20_black" />
+
+
+</com.linhtetko.thelibraryapp.views.viewpods.RatingProgressNumberViewPod>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TheLibraryApp</string>
+    <string name="lbl_search_play_books">Search Play Books</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_library">Library</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_ebooks">Ebooks</string>
+    <string name="lbl_audio_books">Audiobooks</string>
+    <string name="lbl_free_sample">Free Sample</string>
+    <string name="lbl_add_to_wishlist">Add To Wishlist</string>
+    <string name="lbl_about_this_book">About This Book</string>
+    <string name="lbl_download">Download</string>
+    <string name="lbl_delete">Delete from your library</string>
+    <string name="lbl_add_to_shelves">Add to shelves</string>
+    <string name="lbl_mark_as_read">Mark as read</string>
+    <string name="lbl_your_books">Your Books</string>
+    <string name="lbl_your_shelves">Your Shelves</string>
+    <string name="lbl_sort_by_s">Sort by: %s</string>
+    <string name="lbl_sort_by">Sort by</string>
+    <string name="lbl_view_as">View as</string>
+    <string name="lbl_list">List</string>
+    <string name="lbl_small_grid">Small Grid</string>
+    <string name="lbl_large_grid">Large Grid</string>
+    <string name="lbl_recently_opened">Recently opened</string>
+    <string name="lbl_title">Title</string>
+    <string name="lbl_author">Author</string>
+    <string name="lbl_books_that_you_buy_on_the_google_play_website_can_be_read_in_this_app">Books that you buy on the Google Play website can be read in this app.</string>
+    <string name="lbl_about_this_ebook">About this ebook</string>
+    <string name="lbl_ratings_and_reviews">Ratings and reviews</string>
+    <string name="lbl_published">Published</string>
+    <string name="lbl_create_new">Create new</string>
+    <string name="lbl_empty_shelves_sub">Create shelves to match the way you think</string>
+    <string name="lbl_no_shelves">No Shelves</string>
+    <string name="lbl_shelf_name">Shelf name</string>
+    <string name="lbl_create_shelf">Create Shelf</string>
+    <string name="lbl_required">Required</string>
+    <string name="lbl_rename_shelf">Rename Shelf</string>
+    <string name="lbl_delete_shelf">Delete Shelf</string>
+    <string name="lbl_result_from_google_play">Result From Google Play</string>
+    <string name="lbl_book">Books</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.YourShelvesFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivYourShelvesEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bookshelf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fabCreateShelf"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYourShelvesEmptyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/lbl_no_shelves"
+        app:layout_constraintTop_toBottomOf="@id/ivYourShelvesEmpty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvYourShelvesEmptySub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/lbl_empty_shelves_sub"
+        app:layout_constraintTop_toBottomOf="@id/tvYourShelvesEmptyTitle"
+        app:layout_constraintStart_toStartOf="@id/tvYourShelvesEmptyTitle"
+        app:layout_constraintEnd_toEndOf="@id/tvYourShelvesEmptyTitle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvYourShelves"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/view_holder_shelf"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_create_new"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:icon="@drawable/ic_baseline_edit_24"
+        android:textAllCaps="false"
+        android:id="@+id/fabCreateShelf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="90dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

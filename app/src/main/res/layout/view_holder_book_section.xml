@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linhtetko.thelibraryapp.views.viewpods.BookSectionViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookSectionName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2x"
+        android:textColor="?attr/colorOnSurface"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/ivBookSeeMore"
+        app:layout_constraintEnd_toStartOf="@id/ivBookSeeMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBookSeeMore" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBookSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_chevron_right_24"
+        app:tint="?attr/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_margin"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/general_margin"
+        android:paddingHorizontal="@dimen/margin_2x"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBookSectionName"
+        tools:listitem="@layout/view_holder_book" />
+</com.linhtetko.thelibraryapp.views.viewpods.BookSectionViewPod>

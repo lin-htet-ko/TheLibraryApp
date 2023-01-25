@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/general_margin">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivReview"
+        android:layout_width="@dimen/size_review_img_overview"
+        android:layout_height="@dimen/size_review_img_overview"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/img_circle"
+        app:srcCompat="@drawable/placeholder_profile" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lin Htet Ko"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginStart="@dimen/margin_2x"
+        app:layout_constraintStart_toEndOf="@id/ivReview"
+        app:layout_constraintBottom_toTopOf="@+id/rbReview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rbReview"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        tools:numStars="5"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/tvReviewName"
+        app:layout_constraintBottom_toTopOf="@+id/tvReviewContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviewName"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/21/14"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_marginStart="@dimen/general_margin"
+        app:layout_constraintTop_toTopOf="@id/rbReview"
+        app:layout_constraintBottom_toBottomOf="@id/rbReview"
+        app:layout_constraintStart_toEndOf="@id/rbReview"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReviewContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="This is really great book."
+        android:layout_marginTop="@dimen/margin_2x"
+        app:layout_constraintStart_toStartOf="@id/rbReview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbReview"
+        tools:layout_editor_absoluteX="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

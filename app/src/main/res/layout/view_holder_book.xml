@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/vhBook"
+    android:orientation="vertical"
+    android:padding="@dimen/general_margin">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBook"
+        android:layout_width="@dimen/width_book"
+        android:layout_height="@dimen/height_book"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/img_rounded_small"
+        app:srcCompat="@drawable/placeholder_android_book" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBookMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivBook"
+        android:layout_alignEnd="@id/ivBook"
+        android:layout_margin="@dimen/general_margin"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookName"
+        android:layout_width="@dimen/size_book"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBook"
+        android:layout_alignStart="@id/ivBook"
+        android:layout_alignEnd="@id/ivBook"
+        android:layout_marginTop="@dimen/general_margin"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookAuthor"
+        android:layout_width="@dimen/size_book"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookName"
+        android:layout_alignStart="@id/ivBook"
+        android:layout_alignEnd="@id/ivBook"
+        android:layout_marginTop="@dimen/general_margin"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+</RelativeLayout>

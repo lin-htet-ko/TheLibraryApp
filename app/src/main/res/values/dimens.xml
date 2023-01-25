@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_margin">8dp</dimen>
+    <dimen name="margin_2x">16dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="size_main_profile_toolbar">30dp</dimen>
+    <dimen name="elevation_search_bar">2dp</dimen>
+    <dimen name="size_recent_viewed_book">220dp</dimen>
+    <dimen name="size_ic_recent_viewed_more_">30dp</dimen>
+    <dimen name="size_book">100dp</dimen>
+    <dimen name="half_size_book">100dp</dimen>
+    <dimen name="width_book">100dp</dimen>
+    <dimen name="height_book">120dp</dimen>
+    <dimen name="width_book_overview">80dp</dimen>
+    <dimen name="size_review_img_overview">50dp</dimen>
+    <dimen name="height_book_overview">100dp</dimen>
+    <dimen name="size_book_section_detail">250dp</dimen>
+    <dimen name="height_progress">10dp</dimen>
+</resources>
